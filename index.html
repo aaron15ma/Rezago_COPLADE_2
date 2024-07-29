@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa COPLADE Rezago</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Leaflet Control Geocoder CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    
+    <!-- Leaflet Control Layers Base CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-layers-base@1.1.0/dist/leaflet-control-layers-base.min.css">
+</head>
+<body>
+    <div id="map"></div>
+    <!-- Barra de búsqueda -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Buscar por Localidad">
+    </div>
+
+    <div id="sidebar">
+        <!-- Contenido por defecto del sidebar -->
+        <img src="PNG/LOGO COPLADE BC.png" alt="Logo COPLADE BC" class="sidebar-logo">
+        <h3><center>Datos</center></h3>
+        <table>
+            <tr><td colspan="2"><center><strong>Clave Localidad</strong></center><br />-</td></tr>
+            <tr><th scope="row">Población total</th><td>-</td></tr>
+            <tr><th scope="row">Total de viviendas</th><td>-</td></tr>
+            <tr><th scope="row">Analfabeta de 15 años y más</th><td>-</td></tr>
+            <tr><th scope="row">6 a 14 años que no asiste a la escuela</th><td>-</td></tr>
+            <tr><th scope="row">15 a 24 años que no asiste a la escuela</th><td>-</td></tr>
+            <tr><th scope="row">Sin educación básica de 15 años y más</th><td>-</td></tr>
+            <tr><th scope="row">Sin derecho a salud</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas con hacinamiento</th><td>-</td></tr>
+            <tr><th scope="row">Sin servicio de agua entubada</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin sanitario</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin drenaje</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin electricidad</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas con piso de tierra</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin lavadora</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin refrigerador</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin teléfono fijo</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin teléfono celular</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin PC, laptop o tablet</th><td>-</td></tr>
+            <tr><th scope="row">Viviendas sin internet</th><td>-</td></tr>
+            <tr><td colspan="2"><center><strong>Rezago social</strong></center><br />-</td></tr>
+        </table>
+    </div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Leaflet Control Geocoder JS -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    
+    <!-- Tu JS personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

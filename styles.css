@@ -1,0 +1,109 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Asegúrate de que el z-index del mapa sea bajo */
+}
+
+/* Sidebar Estilo */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 270px; /* Ajusta según sea necesario */
+  height: 100%; /* Ajusta según sea necesario */
+  background: rgba(255, 255, 255, 0.6);
+  border-right: 1px solid lightgray;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  overflow: hidden; /* Evita el scroll dentro del sidebar */
+  padding: 10px; /* Espacio interno para evitar que el contenido toque los bordes */
+  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total */
+  transition: all 0.3s ease; /* Transición suave para el hover */
+}
+
+#sidebar:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Sombra más pronunciada al hacer hover */
+    border-right: 1px solid #ccc; /* Color del borde más oscuro al hacer hover */
+}
+
+/* Estilo de la tabla en el sidebar */
+#sidebar table {
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  border-collapse: collapse;
+  table-layout: fixed; /* Fija el tamaño de las celdas para que no se expandan */
+  font-size: 9px; /* Tamaño de fuente reducido */
+}
+
+/* Estilo para centrar el contenido de ciertas filas en la tabla del sidebar */
+#sidebar .centered {
+    text-align: center;
+}
+
+#sidebar .centered td {
+    text-align: center;
+    font-weight: bold;
+}
+
+#sidebar h3 {
+    text-align: center;
+    font-weight: bold;
+    height: 15px;
+    line-height: 1;
+    font-size: 15px;
+}
+
+#sidebar th, #sidebar td {
+  min-width: 75px;
+  min-height: 30px; /* Ajusta según el tamaño deseado */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  overflow: hidden; /* Oculta el contenido desbordante */
+}
+
+#sidebar img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+/* Estilo para la imagen del logo en el sidebar */
+#sidebar .sidebar-logo {
+    width: 60%; /* Ajusta el tamaño al ancho del sidebar */
+    height: auto; /* Mantiene la relación de aspecto */
+    display: block;
+    margin: 0 auto 10px; /* Centra la imagen y agrega un margen inferior */
+}
+/* Estilo para la barra de búsqueda */
+#search-container {
+    position: fixed;
+    bottom: 10px;
+    left: 280px;
+    z-index: 1001; /* Asegura que esté por encima del mapa */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+#search-input {
+    width: 250px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+/* Estilo para mover el control de zoom hacia la izquierda */
+.leaflet-control-zoom {
+    left: 1555px; /* Ajusta la distancia desde la izquierda */
+    top: 60px !important; /* Ajusta la distancia desde la parte superior (opcional) */
+    position: absolute !important; /* Asegura que el control tenga posición absoluta */
+}
